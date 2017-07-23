@@ -1,6 +1,6 @@
 {
   "name": "fetchcontroller-polyfill",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A browser polyfill for FetchController (stubs out API, doesn't actually abort request).",
   "main": "fetchcontroller.js",
   "scripts": {

@@ -14,6 +14,15 @@ the request is aborted, but calls ```.catch()``` with ```err.name == 'AbortError
     }
   });
 ```
+# How to use
+
+```shell
+$ npm install --save fetchcontroller-polyfill
+```
+
+Then import it early in your client entrypoint .js file using
+```require('fetchcontroller-polyfill')``` or ```import 'fetchcontroller-polyfill'```.
+
 
 # See also
 
