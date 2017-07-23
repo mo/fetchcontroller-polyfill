@@ -1,34 +1,4 @@
-# FetchController "polyfill"
+Moved to:
 
-Minimal stubs so that FetchController API can be used. Doesn't actually close the connection when
-the request is aborted, but calls ```.catch()``` with ```err.name == 'AbortError'``` instead of ```.then()```.
-
-```js
-  const controller = new FetchController();
-  const signal = this.controller.signal;
-  fetch('/some/url', {signal}).then(res => res.json()).then(data => {
-    // do something with "data"
-  }).catch(err => {
-    if (err.name == 'AbortError') {
-      return;
-    }
-  });
-```
-# How to use
-
-```shell
-$ npm install --save fetchcontroller-polyfill
-```
-
-Then import it early in your client entrypoint .js file using
-```require('fetchcontroller-polyfill')``` or ```import 'fetchcontroller-polyfill'```.
-
-
-# See also
-
-* [FetchController on MDN](https://developer.mozilla.org/en-US/docs/Web/API/FetchController)
-* [PR for fetch specification](https://github.com/whatwg/fetch/pull/523)
-
-# License
-
-MIT
+* [mo/abortcontroller-polyfill on GitHub](http://github.com/mo/abortcontroller-polyfill)
+* [abortcontroller-polyfill on NPM](https://www.npmjs.com/package/abortcontroller-polyfill)
