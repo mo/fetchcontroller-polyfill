@@ -1,0 +1,12 @@
+{
+  "name": "fetchcontroller-polyfill",
+  "version": "1.0.0",
+  "description": "A browser polyfill for FetchController (stubs out API, doesn't actually abort request).",
+  "main": "fetchcontroller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Martin Olsson <martin@minimum.se> (https://mo.github.io)",
+  "license": "MIT"
+}
